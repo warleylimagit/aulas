@@ -1,7 +1,7 @@
 package com.acme;
 
 public class CalculadorAnoBissexto {
-
+ 
 	public static boolean ehAnoBissexto(int ano) {
 		if (ano % 2 != 0) {
 			return false;
