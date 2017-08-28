@@ -1,6 +1,5 @@
 package com.acme.teste;
 
-import static org.junit.Assert.*;
 
 import org.junit.Assert;
 import org.junit.Test;
