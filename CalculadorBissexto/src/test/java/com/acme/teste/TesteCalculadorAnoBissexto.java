@@ -11,8 +11,8 @@ public class TesteCalculadorAnoBissexto {
 	
 	@Test
 	public void testeAnoImpar() {
-		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(1000);
-		Assert.assertFalse("Ano do calendario Juliano",resultado);
+		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(1100);
+		Assert.assertTrue("Ano do calendario Juliano",resultado);
 	}
 	@Test
 	public void testeAnoImpar() {
