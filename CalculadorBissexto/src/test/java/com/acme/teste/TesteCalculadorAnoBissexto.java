@@ -8,6 +8,12 @@ import com.acme.CalculadorAnoBissexto;
 
 public class TesteCalculadorAnoBissexto {
 
+	
+	@Test
+	public void testeAnoImpar() {
+		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(1000);
+		Assert.assertFalse("Ano do calendario Juliano",resultado);
+	}
 	@Test
 	public void testeAnoImpar() {
 		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(1977);
@@ -16,7 +22,7 @@ public class TesteCalculadorAnoBissexto {
 	@Test
 	public void testeAnoParNaoBissexto() {
 		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(1982);
-		Assert.assertFalse("Ano par n„o bissexto",resultado);
+		Assert.assertFalse("Ano par n√£o bissexto",resultado);
 	}
 	@Test
 	public void testeAnoBissextoTradicional() {
