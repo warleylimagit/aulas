@@ -10,7 +10,7 @@ public class TesteCalculadorAnoBissexto {
 
 	
 	@Test
-	public void testeAnoImpar() {
+	public void testeAnoJuliano() {
 		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(1100);
 		Assert.assertTrue("Ano do calendario Juliano",resultado);
 	}
