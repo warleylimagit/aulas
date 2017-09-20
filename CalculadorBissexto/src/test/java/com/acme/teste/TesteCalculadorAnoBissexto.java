@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.acme.CalculadorAnoBissexto;
-// ALGUM COMENTARIO!
 public class TesteCalculadorAnoBissexto {
 
 
@@ -33,5 +32,10 @@ public class TesteCalculadorAnoBissexto {
 	public void testeAnoSeculoBissexto() {
 		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(2000);
 		Assert.assertTrue("Ano de seculo que eh bissexto",resultado);
+	}
+	@Test
+	public void testeAno2017() {
+		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(2017);
+		Assert.assertTrue("2017 eh bissexto",resultado);
 	}
 }
