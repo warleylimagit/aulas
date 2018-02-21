@@ -2,7 +2,8 @@ package com.acme;
 
 // Calculador Bissexto
 public class CalculadorAnoBissexto {
-     
+	 
+	static int INICIO_CALENDARIO_JULIANO = -46;
 	public static boolean ehAnoBissexto(int ano) {
 		if (ano % 2 != 0) {
 			return false;

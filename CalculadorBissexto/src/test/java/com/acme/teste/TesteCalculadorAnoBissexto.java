@@ -33,6 +33,10 @@ public class TesteCalculadorAnoBissexto {
 		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(2000);
 		Assert.assertTrue("Ano de seculo que eh bissexto",resultado);
 	}
-	// Modificacao
+	@Test
+	public void testeAnoAnteriorInicioCalendarioJuliano() {
+		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(-60);
+		Assert.assertFalse("Ano de seculo que nao eh bissexto",resultado);
 
+	}
 }
