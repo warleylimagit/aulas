@@ -34,11 +34,6 @@ public class TesteCalculadorAnoBissexto {
 		Assert.assertTrue("Ano de seculo que eh bissexto",resultado);
 	}
 
-	@Test
-	public void teste2019() {
-		boolean resultado = CalculadorAnoBissexto.ehAnoBissexto(2019);
-		Assert.assertTrue("Ano 2019",resultado);
-	}
 
 	@Test
 	public void testeAnoAnteriorInicioCalendarioJuliano() {
